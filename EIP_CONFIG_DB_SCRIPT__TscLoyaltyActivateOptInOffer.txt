@@ -1,0 +1,139 @@
+-- DEV --
+
+SET DEFINE OFF;
+
+UPDATE EIPLOGGING.EIP_CONFIG SET VALUE ='true' WHERE KEY = 'TscLoyaltyActivateOptInOffer.cacheInvalidationPublish' OR KEY= 'DEV.TscLoyaltyActivateOptInOffer.cacheInvalidationPublish';
+COMMIT;
+
+
+INSERT INTO EIPLOGGING.EIP_CONFIG (STORE_NAME,KEY,VALUE) values ('TscCommonConfig','DEV.TscLoyaltyActivateOptInOffer.ConfigString','{
+"source":"WCS/CMA",
+"target":"Epsilon",
+"processName":"Activate Opt In Offer",
+"bypassCache" : "N",
+"enableSuccessLogger":"Y",
+"epsilonEndpoint":"https://u1tscl-pveapi.epsilonagilityloyalty.com/api/v2/profiles/sysoffers",
+"epsilonActivityOfferEndpoint":"https://u1tscl-pveapi.epsilonagilityloyalty.com/api/v1/activity",
+"epsilonAcceptLanguage" : "en-US",
+"epsilonProgramCode" :"TSCNC",
+"epsilonApiGwTimeoutMs":"3000",
+"Content-Type":"application/json",
+"securitycheck":"enable",
+"repeatCount":"0",
+"repeatInterval":"0"
+}');
+
+COMMIT;
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- QA1 to QA10
+
+-- DEV --
+
+SET DEFINE OFF;
+
+UPDATE EIPLOGGING.EIP_CONFIG SET VALUE ='true' WHERE KEY = 'TscLoyaltyActivateOptInOffer.cacheInvalidationPublish' OR KEY= 'QA.TscLoyaltyActivateOptInOffer.cacheInvalidationPublish';
+COMMIT;
+
+
+INSERT INTO EIPLOGGING.EIP_CONFIG (STORE_NAME,KEY,VALUE) values ('TscCommonConfig','QA.TscLoyaltyActivateOptInOffer.ConfigString','{
+"source":"WCS/CMA",
+"target":"Epsilon",
+"processName":"Activate Opt In Offer",
+"bypassCache" : "N",
+"enableSuccessLogger":"Y",
+"epsilonEndpoint":"https://u1tscl-pveapi.epsilonagilityloyalty.com/api/v2/profiles/sysoffers",
+"epsilonActivityOfferEndpoint":"https://u1tscl-pveapi.epsilonagilityloyalty.com/api/v1/activity",
+"epsilonAcceptLanguage" : "en-US",
+"epsilonProgramCode" :"TSCNC",
+"epsilonApiGwTimeoutMs":"3000",
+"Content-Type":"application/json",
+"securitycheck":"enable",
+"repeatCount":"0",
+"repeatInterval":"0"
+}');
+
+COMMIT;
+
+COMMIT;
+
+
+<--------------------------------------------------------------------------------------------------------------------------------------->
+
+
+-- CRM UAT2 --
+
+UPDATE EIPLOGGING.EIP_CONFIG SET VALUE ='true' WHERE KEY = 'TscLoyaltyActivateOptInOffer.cacheInvalidationPublish' OR KEY= 'UAT.TscLoyaltyActivateOptInOffer.cacheInvalidationPublish';
+COMMIT;
+
+
+
+INSERT INTO EIPLOGGING.EIP_CONFIG (STORE_NAME,KEY,VALUE) values ('TscCommonConfig','UAT.TscLoyaltyActivateOptInOffer.ConfigString','{
+"source":"WCS/CMA",
+"target":"Epsilon",
+"processName":"Activate Opt In Offer",
+"bypassCache" : "N",
+"enableSuccessLogger":"Y",
+"epsilonEndpoint":"https://u2tscl-pveapi.epsilonagilityloyalty.com/api/v2/profiles/sysoffers",
+"epsilonActivityOfferEndpoint":"https://u2tscl-pveapi.epsilonagilityloyalty.com/api/v1/activity",
+"epsilonAcceptLanguage" : "en-US",
+"epsilonProgramCode" :"TSCNC",
+"epsilonApiGwTimeoutMs":"3000",
+"Content-Type":"application/json",
+"securitycheck":"enable",
+"repeatCount":"0",
+"repeatInterval":"0"
+}');
+
+COMMIT;
+< ----------------------------------------------------------------------------------------------------------------------------------------
+
+-- PERF2 --
+
+UPDATE EIPLOGGING.EIP_CONFIG SET VALUE ='true' WHERE KEY = 'TscLoyaltyActivateOptInOffer.cacheInvalidationPublish' OR KEY= 'PERF.TscLoyaltyActivateOptInOffer.cacheInvalidationPublish';
+COMMIT;
+
+
+INSERT INTO EIPLOGGING.EIP_CONFIG (STORE_NAME,KEY,VALUE) values ('TscCommonConfig','PERF.TscLoyaltyActivateOptInOffer.ConfigString','{
+"source":"WCS/CMA",
+"target":"Epsilon",
+"processName":"Activate Opt In Offer",
+"bypassCache" : "N",
+"enableSuccessLogger":"Y",
+"epsilonEndpoint":"https://u2tscl-pveapi.epsilonagilityloyalty.com/api/v2/profiles/sysoffers",
+"epsilonActivityOfferEndpoint":"https://u2tscl-pveapi.epsilonagilityloyalty.com/api/v1/activity",
+"epsilonAcceptLanguage" : "en-US",
+"epsilonProgramCode" :"TSCNC",
+"epsilonApiGwTimeoutMs":"3000",
+"Content-Type":"application/json",
+"securitycheck":"enable",
+"repeatCount":"0",
+"repeatInterval":"0"
+}');
+
+COMMIT;
+
+
+-- PROD --
+
+UPDATE EIPLOGGING.EIP_CONFIG SET VALUE ='true' WHERE KEY = 'TscLoyaltyActivateOptInOffer.cacheInvalidationPublish' OR KEY= 'PROD.TscLoyaltyActivateOptInOffer.cacheInvalidationPublish';
+COMMIT;
+
+
+INSERT INTO EIPLOGGING.EIP_CONFIG (STORE_NAME,KEY,VALUE) values ('TscCommonConfig','PERF.TscLoyaltyActivateOptInOffer.ConfigString','{
+"source":"WCS/CMA",
+"target":"Epsilon",
+"processName":"Activate Opt In Offer",
+"bypassCache" : "N",
+"enableSuccessLogger":"Y",
+"epsilonEndpoint":"https://p1tscl-pveapi.epsilonagilityloyalty.com/api/v2/profiles/sysoffers",
+"epsilonActivityOfferEndpoint":"https://p1tscl-pveapi.epsilonagilityloyalty.com/api/v1/activity",
+"epsilonAcceptLanguage" : "en-US",
+"epsilonProgramCode" :"TSCNC",
+"epsilonApiGwTimeoutMs":"3000",
+"Content-Type":"application/json",
+"securitycheck":"enable",
+"repeatCount":"0",
+"repeatInterval":"0"
+}');
